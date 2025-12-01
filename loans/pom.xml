@@ -80,7 +80,7 @@
 						</exclude>
 					</excludes>
 					<image>
-						<name>leejaeyoung4466/${project.artifactId}:s6</name>
+						<name>jaesoon/${project.artifactId}:s6</name>
 					</image>
 				</configuration>
 			</plugin>
