@@ -5,14 +5,14 @@
 
 ### docker build
 
-docker build . -t jaesoon/loans:s4
+docker build . -t leejaeyoung4466/loans:s4
 
 docker images
-docker inspect jaesoon/loans:s5
+docker inspect leejaeyoung4466/loans:s5
 
-docker run -p 8081:8080 jaesoon/accounts:s5
+docker run -p 8081:8080 leejaeyoung4466/accounts:s5
 
-docker run -d -p 8081:8080 jaesoon/accounts:s5  BACK GROUND
+docker run -d -p 8081:8080 leejaeyoung4466/accounts:s5  BACK GROUND
 
 docker ps 상태확인
 
