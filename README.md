@@ -176,3 +176,47 @@ docker compose down  -- 종료 및 삭제
 
 - docker container restart <container_id>
     - 재실행
+- docker container logs -f <container_id>
+    - 로그 지속 추적
+
+- docker rm  <container_id>
+    - 컨테이너 삭제 스페이스 구분자로 여러개 삭제가
+
+- docker container prune
+    - 멈춰있는 모든 컨테이너 삭제
+
+- docker image prune
+    - 실행되지 않은 모든 이미지 삭제
+
+- docker image push docker.io/jaesoon/accounts:s5
+    - docker image hub에 push
+
+- docker image pull docker.io/jaesoon/accounts:s5
+    - docker image pull
+
+- docker container stats
+    - 실행되고 있는 컨테이너 상태 확인
+
+- docker system prune
+    - 사용되지 않은 시스템 청소
+    - -a 를 붙이면 강력한 처리
+    - docker system prune --volumes
+        - 볼륨 삭제 가능
+
+- docker login -u
+    - 로그인
+
+- docker logout
+
+- docker history leejaeyoung4466/accounts:s5
+    - docker history → 이미지 생성 로그 즉 디버그용
+      
+- docker exec -it accounts-ms sh
+    - 컨테이너 내부 shell 열기
+
+- docker compose up
+    - docker compose 파일 에 작성된 컨테이너 실행
+
+- docker compose down
+    - compose 실행된 컨테이너 것 중지 및 삭제
+  
