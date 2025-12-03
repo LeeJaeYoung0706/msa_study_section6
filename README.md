@@ -102,3 +102,16 @@ networks: # 루트 요소 서비스간의 네트워킹 정의
 
 
 ```
+
+실행
+
+```jsx
+docker compose up -d -- 실행
+```
+
+종료
+
+```jsx
+docker compose down  -- 종료 및 삭제
+종료만 하려면 stop
+```
