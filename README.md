@@ -115,3 +115,64 @@ docker compose up -d -- 실행
 docker compose down  -- 종료 및 삭제
 종료만 하려면 stop
 ```
+
+
+### Docker Command
+
+- docker images
+    - docker 이미지 리스트
+
+- docker image inspect [imageid]
+    - image 상세 정보
+
+- docker image rm  [imageid]
+    - image 삭제
+
+- docker build . -t [imageName[
+    - 이미지 생성
+
+- docker run -p [hostPort:ContainerPort] [imageName]
+    - HostPort 와 ContainerPort를 지정한 상태로 이미지 실
+
+- docker ps
+    - 실행중인 container list
+
+- docker ps -a
+    - 중지 및 실행중인 container list
+
+- docker container start edaf7f7eb443 44a18fe1b2de a08ec1b6d6d7
+    - docker container start 함수 id를 space 로 포함하여 여러개 실행 가능
+
+- docker container pause edaf7f7eb443 44a18fe1b2de a08ec1b6d6d7
+    - 메모리는 그대로 유지
+    - 파일시스템 상태도 그대로 유지
+    - 네트워크 소켓 연결 자체는 살아있지만 데이터 송수신 불가
+    - 프로세스는 kill 되지 않고, 그냥 멈춘 상태
+    
+    1) 컨테이너 프로세스가 CPU를 과하게 잡아먹을 때
+    
+    잠시 멈춰놨다가 상태 점검할 때.
+    
+    2) 컨테이너 상태를 유지해야 하지만, 동작은 멈춰야 할 때
+    
+    디버깅 / 백업 / 점검 시 유용.
+    
+    3) 스냅샷 느낌으로 일시정지
+    
+    Stop 은 프로세스 종료라 메모리 날아가지만, Pause 는 메모리 그대로 남아있음.
+    
+- docker unpause <container_id>
+    - 다시 활성화
+
+- docker container stop <container_id>
+    - 5~10초가량의 시간 뒤 정상 종료
+    - docker stop -t 3 app_container t를 통해 시간 조정가능
+    
+- docker container kill <container_id>
+    - 즉시종료
+
+- docker container logs edaf7f7eb443
+    - 콘테이너의 로그
+
+- docker container restart <container_id>
+    - 재실행
