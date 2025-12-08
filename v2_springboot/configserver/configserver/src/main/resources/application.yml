@@ -20,3 +20,6 @@ spring:
           clone-on-start: true
           force-pull: true
 #          search-locations: "classpath:/config"
+
+encrypt:
+  key: "AS4Y75S51FD15474BV5667FQ715"
