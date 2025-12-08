@@ -10,4 +10,5 @@ spring:
     config:
       server:
         native:
-          search-locations: "classpath:/config"
+          search-locations: "file:///C://Users//qaz77//Downloads//config" ## 파일로 접근하기
+#          search-locations: "classpath:/config"
