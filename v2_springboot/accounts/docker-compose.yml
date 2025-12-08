@@ -1,0 +1,38 @@
+services:
+  accounts:
+    image: "leejaeyoung4466/accounts:s5"
+    container_name: accounts-ms # 컨테이너 랜덤 이름 부여 방지
+    ports: # port 맵핑 다중 포트 맵핑 가능.
+      - "8080:8080"
+    deploy: # 배포
+      resources:
+        limits:
+          memory: 700m # 최대 메모리
+    networks:
+      - sidle
+  loans:
+    image: "leejaeyoung4466/loans:s5"
+    container_name: loans-ms # 컨테이너 랜덤 이름 부여 방지
+    ports: # port 맵핑 다중 포트 맵핑 가능.
+      - "8090:8090"
+    deploy: # 배포
+      resources:
+        limits:
+          memory: 700m # 최대 메모리
+    networks:
+      - sidle
+  cards:
+    image: "leejaeyoung4466/cards:s5"
+    container_name: cards-ms # 컨테이너 랜덤 이름 부여 방지
+    ports: # port 맵핑 다중 포트 맵핑 가능.
+      - "9000:9000"
+    deploy: # 배포
+      resources:
+        limits:
+          memory: 700m # 최대 메모리
+    networks:
+      - sidle
+networks: # 루트 요소 서비스간의 네트워킹 정의
+  sidle:
+    driver: "bridge" # 기본적으로 타입 지정하지 않는다면 이 타입으로 지정
+

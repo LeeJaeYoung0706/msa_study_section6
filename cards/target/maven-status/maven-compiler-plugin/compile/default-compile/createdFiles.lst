@@ -1,0 +1,16 @@
+com\msa\cards\audit\AuditAwareImpl.class
+com\msa\cards\constants\CardsConstants.class
+com\msa\cards\entity\BaseEntity.class
+com\msa\cards\entity\Cards.class
+com\msa\cards\exception\GlobalExceptionHandler.class
+com\msa\cards\repository\CardsRepository.class
+com\msa\cards\mapper\CardsMapper.class
+com\msa\cards\service\ICardsService.class
+com\msa\cards\dto\ResponseDto.class
+com\msa\cards\exception\ResourceNotFoundException.class
+com\msa\cards\exception\CardAlreadyExistsException.class
+com\msa\cards\controller\CardsController.class
+com\msa\cards\CardsApplication.class
+com\msa\cards\service\impl\CardsServiceImpl.class
+com\msa\cards\dto\ErrorResponseDto.class
+com\msa\cards\dto\CardsDto.class
