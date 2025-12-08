@@ -5,6 +5,14 @@ server:
 spring:
   application:
     name: accounts
+  config:
+    import:
+      - "application_qa.yml"
+      - "application_prod.yml"
+  profiles:
+    active:
+      - "qa"
+
   devtools:
     restart:
       enabled: true
@@ -27,10 +35,10 @@ spring:
       enabled: true
 
 build:
-  version: "1.0"
+  version: "3.0"
 
 accounts:
-  message: "마이크로서비스를 만들어 봅시다."
+  message: "마이크로서비스를 만들어 봅시다. LOCAL API"
   contactDetails:
     name: "sidle ( Lee jae young )"
     email: "wodud@4019@gmail.com"
