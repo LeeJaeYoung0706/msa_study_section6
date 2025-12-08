@@ -5,6 +5,8 @@ server:
 spring:
   application:
     name: accounts
+  profiles:
+    active: "qa"
   devtools:
     restart:
       enabled: true
@@ -25,3 +27,5 @@ spring:
   h2:
     console:
       enabled: true
+  config:
+    import: "optional:configserver:http://localhost:8071/"

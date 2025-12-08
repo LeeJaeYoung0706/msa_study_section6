@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: loans
+  profiles:
+    active: "qa"
   devtools:
     restart:
       enabled: true
