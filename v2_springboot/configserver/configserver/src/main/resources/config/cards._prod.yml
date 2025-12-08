@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "마이크로서비스를 만들어 봅시다. PROD CARDS API"
+  contactDetails:
+    name: "sidle ( Lee jae young )"
+    email: "wodud@4019@gmail.com"
+  onCallSupport:
+    - 00000000
+    - 00000001
