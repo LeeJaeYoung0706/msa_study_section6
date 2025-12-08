@@ -5,8 +5,8 @@ server:
 spring:
   application:
     name: accounts
-  profiles:
-    active: "qa"
+#  profiles:
+#    active: "qa"
   devtools:
     restart:
       enabled: true
