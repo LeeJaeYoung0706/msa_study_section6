@@ -14,6 +14,7 @@ spring:
           uri: "https://github.com/LeeJaeYoung0706/github-yml-study.git"
         #native:
           #search-locations: "file:///C://Users//qaz77//Downloads//config" ## 파일로 접근하기
+          # 참고 https://docs.spring.io/spring-cloud-config/docs/current/reference/html/
           default-label: main
           timeout: 5
           clone-on-start: true
