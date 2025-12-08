@@ -6,10 +6,10 @@ build:
 accounts:
   message: "마이크로서비스를 만들어 봅시다. PROD API"
   contactDetails:
-    #name: "sidle ( Lee jae young )"
-    name: "(cipher)9156a3d1139ae77f45358ab0257929f8f96e86579d5bccb6f4313b7a9d5fe2a3ace47b34b64eccc9425f45ce306b8284"
-    #email: "wodud@4019@gmail.com"
-    email: "(cipher)175d5cc6c13742443e1fbd517b5cd9574531424a205070c55883cbdbd233cbaf22538b0aebc1b537f15313f49de04266"
+  #name: "sidle ( Lee jae young )"
+  name: "{cipher}9156a3d1139ae77f45358ab0257929f8f96e86579d5bccb6f4313b7a9d5fe2a3ace47b34b64eccc9425f45ce306b8284"
+  #email: "wodud@4019@gmail.com"
+  email: "{cipher}175d5cc6c13742443e1fbd517b5cd9574531424a205070c55883cbdbd233cbaf22538b0aebc1b537f15313f49de04266"
   onCallSupport:
     - 00000000
     - 00000001
