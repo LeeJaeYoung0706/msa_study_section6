@@ -23,7 +23,7 @@
 
 
 ## 환경 변수로 실행하기
-### Program arguments
+### ENVIRONMENT VARIABLES
 ```java
 spring.profiles.active=prod;build.version=1.2
 ```
