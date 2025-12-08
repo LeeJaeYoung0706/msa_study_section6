@@ -5,10 +5,17 @@ spring:
   application:
     name: "configserver"
   profiles:
-    active: native
+    active: git
+  #active: native file , classPath
   cloud:
     config:
       server:
-        native:
-          search-locations: "file:///C://Users//qaz77//Downloads//config" ## 파일로 접근하기
+        git:
+          uri: "https://github.com/LeeJaeYoung0706/github-yml-study.git"
+        #native:
+          #search-locations: "file:///C://Users//qaz77//Downloads//config" ## 파일로 접근하기
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
 #          search-locations: "classpath:/config"
